@@ -9,7 +9,6 @@ services:
       dockerfile: Dockerfile
       args:
         - JAR_FILE=*.jar
-    container_name: app
     depends_on:
       - db
     environment:
