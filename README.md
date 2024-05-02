@@ -21,7 +21,18 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html
 		- "http://52.91.250.73:8080"
 	- [X] [Install Docker](https://stackoverflow.com/questions/53918841/how-to-install-docker-on-amazon-linux2)
 	- [X] [Install Docker Compose](https://stackoverflow.com/questions/63708035/installing-docker-compose-on-amazon-ec2-linux-2-9kb-docker-compose-file)
-	
+	- [X] Install Git
+	- [X] Clone through HTTP (not ssh)
+	- [X] Install maven through yum
+	- [X] Run Docker
+	- [X] Add user to the docker group
+		```
+		sudo usermod -aG docker $USER
+		sudo reboot
+		```
+	- [X] Update compose with the port routing
+	- [X] NOW you can access at the url: http://ec2-52-91-250-73.compute-1.amazonaws.com:8080/
+	- [ ] To run in the bg: `docker-compose up -d`. D flag will run in bg.
 - [X] Connect SQL DB and create docker compose image (Docker Compose)
 	- [X] Switch h2 db to postgresql
 	- [ ] Upload docker compose to hosting platform.
